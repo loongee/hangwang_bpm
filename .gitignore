@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 密钥与本地配置
+.env
+.env.*
+!.env.example
+credentials.json
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+
+/analysis/
+
+# 第三方安装包，体积大且不是本仓库源码
+*.apk
+*.aab

@@ -1,0 +1,18 @@
+[project]
+name = "hanwang-bpm"
+version = "0.1.0"
+description = "MCP server for the Hanwang health blood-pressure cloud"
+requires-python = ">=3.10"
+dependencies = [
+  "mcp>=2,<3",
+]
+
+[project.scripts]
+hanwang-bpm = "hanwang_bpm.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["hanwang_bpm"]
